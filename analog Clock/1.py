@@ -1,0 +1,1 @@
+print("haha.. hey JavaScript ;D i can run in browser.. too.. i came from-backend to front-end like u who came from front-end to backend, Python's Response For javaScript :|", 45)
