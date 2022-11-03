@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="2.css" />
+    <link rel="stylesheet" href="bg_mainContent.css" />
+    <title>Sindh University</title>
+  </head>
+  <body>
+    <header style="margin-bottom: 1.2rem">  
+      <div id="main_Logo_Container">
+        <!--Flex Row Nav-Bar -->
+        <img
+          src="https://usindh.edu.pk/wp-content/uploads/2018/10/2logo-usindh.png"
+          alt=""
+        />
+        <p style="color: #0967a9">ISO 9001:2015 Certified</p>
+      </div>
+
+      <div id="navBar">
+        <ul>
+          <li onmouseenter="fun(0) " onmouseleave="fn(0)">
+            <a href="#">Home</a>
+          </li>
+          <li onmouseenter="fun(1) " onmouseleave="fn(1)">
+            <a href="#">About</a>
+          </li>
+          <li onmouseenter="fun(2) " onmouseleave="fn(2)">
+            <a href="#">Academics</a>
+          </li>
+          <li onmouseenter="fun(3) " onmouseleave="fn(3)">
+            <a href="#">Administration</a>
+          </li>
+          <li onmouseenter="fun(4) " onmouseleave="fn(4)">
+            <a href="#">Admission 2022</a>
+          </li>
+          <li onmouseenter="fun(5) " onmouseleave="fn(5)">
+            <a href="#">Campuses</a>
+          </li>
+          <li onmouseenter="fun(6) " onmouseleave="fn(6)">
+            <a href="#">Examinations</a>
+          </li>
+          <li onmouseenter="fun(7) " onmouseleave="fn(7)">
+            <a href="#">Research Journals</a>
+          </li>
+          <li onmouseenter="fun(8) " onmouseleave="fn(8)">
+            <a href="#">Learning Management System</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+  <!-- Section:1 main slider of home page  -->
+    <div id="main_Slider" style="margin-bottom: 1.2rem">
+      <img src="4-slider.jpg" />
+    </div>
+
+    <div id="sect2">
+      <img id="logo" src="logo.png" alt="">
+      <img id="sect2Banner" src="student2.png" alt="">
+    </div>
+
+  <script>
+    function fun(I) {
+      document.getElementsByTagName("li")[I].style.backgroundColor = "#8EA12B";
+    }
+    function fn(I) {
+      document.getElementsByTagName("li")[I].style.transition = "0.4s";
+      document.getElementsByTagName("li")[I].style.backgroundColor = "#0967a9";
+    }
+  </script>
+</html>

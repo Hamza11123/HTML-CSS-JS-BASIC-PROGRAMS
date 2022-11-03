@@ -1,0 +1,96 @@
+/* This file Contains Properties for really :) Special kinda decorations */
+    /* *{
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    } */
+/* /--------------------- ancor hover styling -------------------*/ */
+
+/* a{
+    text-decoration: none;
+} */
+
+
+/* /--------------------- ancor hover styling -------------------*/ */
+
+
+/* ---------------------Notifications styling ------------------ */
+
+
+
+
+/* ---------------------Notifications styling ------------------ */
+
+.cursorPointer{
+    cursor: pointer;
+}
+/* ----------------------------Fonts styling and size Css -----------------------*/
+
+/* ----------------------------Fonts styling and size Css -----------------------*/
+
+
+
+
+
+
+
+/* ----------------------------- Styling and hover effects for header ---------------------------- */
+header #navBar li a:hover{
+    transition: all 0.2s;
+    background-color: rgb(200, 200, 200);
+    font-size: 16px;
+    font-weight: bold ;
+}
+header #navBar li a:not(:hover){
+    transition: all 0.4s; 
+}
+/* ----------------------------- Styling and hover effects for header ---------------------------- */
+
+
+
+
+
+
+
+/*---------------- Styling For-Cards ---------------------*/
+
+#specialCard #Flex_Container_Wrapper_For_Special_Card #Parent_Of_links_ancor_Links li{
+    display: flex;
+    align-items: flex-start;
+    margin: 14px 0px;
+}
+#specialCard #Flex_Container_Wrapper_For_Special_Card #Parent_Of_links_ancor_Links li a{
+    font-size: 16px;
+}
+#specialCard #Flex_Container_Wrapper_For_Special_Card #Parent_Of_links_ancor_Links #just_HyperLink a{
+    margin: 0px auto;
+    font-size: 18px;
+
+}
+#specialCard #Flex_Container_Wrapper_For_Special_Card #Parent_Of_links_ancor_Links #just_HyperLink {
+    background-color: rgb(240, 245, 247);
+    padding: 0.6rem 0rem;   
+    cursor: pointer;
+        
+}
+#specialCard #Flex_Container_Wrapper_For_Special_Card #Parent_Of_links_ancor_Links #just_HyperLink:hover {
+    transition: all 0.3s;
+    background-color: rgb(232, 232, 232);
+    padding: 0.6rem 0rem;   
+    
+        
+}
+
+#specialCard #Flex_Container_Wrapper_For_Special_Card #Parent_Of_links_ancor_Links li img{
+    height: 6rem;
+    width: 6rem;
+    
+}
+#specialCard #Flex_Container_Wrapper_For_Special_Card #Parent_Of_links_ancor_Links li a{
+    margin: 4px 10px;    
+}
+#specialCard #Flex_Container_Wrapper_For_Special_Card #Parent_Of_links_ancor_Links hr{
+    width: 21.2rem;    
+    border: 1px solid #e9f0f7;  
+}
+
+/*---------------- Styling For Special-Cards ---------------------*/
+

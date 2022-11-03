@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        height: 700px;
+        width: 1400px;
+        position: relative;
+      }
+
+      .items {
+        height: 200px;
+        width: 300px;
+      }
+
+      #i1 {
+        background-color: rgb(11, 7, 255);
+      }
+      #i2 {
+        background-color: rgb(255, 238, 1);
+      }
+      #i3 {
+        transform: translate(0px, 0px);
+        background-color: green;
+      }
+      #i4 {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body style="background-color: black">
+    <div id="container" style="background-color: rgb(24, 6, 39)">
+      <div class="items" id="i1"></div>
+      <div class="items" id="i2"></div>
+      <div class="items" id="i3"></div>
+      <div class="items" id="i4"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                height: 1000px;
+                width: auto;
+                border: 4px rgb(255, 0, 0) solid;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: black;
+            }
+
+            #b{
+                
+                height: 600px;
+                width: 1600px;
+
+
+                display: flex;
+                background-color: blue;
+                /* overflow: hidden; */
+            }
+            #a{
+                position: relative;
+                top: 7%;
+                left: 2%;
+                height: 520px;
+                display: flex;
+                background-color: yellow;
+                animation: h 10s ease-in-out infinite;
+                /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            }
+
+            img{
+                height:  500px;
+                width:  1400px;
+                margin: 10px 60px;
+            }
+
+             @keyframes h {
+                0%{
+                    /* left: 2%; */
+
+                   transform: translate(0%, 0%);
+                }
+                28%{
+                    /* left: 2%; */
+
+                   transform: translate(0%, 0%);
+                }
+
+
+                33.3%{
+                    /* left: -92%; */
+                    transform: translate(-25%,0%);
+                }
+                61.6%{
+                    /* left: -92%; */
+                    transform: translate(-25%,0%);
+                }
+                            
+
+
+                66.6%{
+                    /* left: -187%; */
+                    transform: translate(-50%,0%);
+                }
+
+                94.9%{
+                    transform: translate(-50%, 0%);
+                }
+
+                99.9%{
+                    /* left: -187%; */
+                    transform: translate(-75%,0%);
+                }
+                
+
+
+            } 
+        </style>
+</head>
+<body>
+    <div id="b">
+        <div id="a">
+            <img src="Banner Machine Learning.jpg" alt="">
+            <img src="Banner (IEX).jpg" alt="">
+            <!-- <img src="home-small-banner-covid19.png" alt=""> -->
+            <img src="EESD-MUET-WEB-COVER.jpg" alt="">
+            <img src="Banner Machine Learning.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

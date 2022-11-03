@@ -1,0 +1,304 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* color:white; */
+}
+:root{
+    --defaultColor:#144A6E;
+    --ancor_link_color:#0A3D60EB;
+    --paragraph_color: #7e7e7e;
+    --paragraph2_redishColor:#6f6b6b;
+    --hoverAncorColor: #000000eb;
+}
+img{
+    cursor: pointer;
+}
+p{
+    color: var(--paragraph_color);
+}
+a{
+    color: var(--ancor_link_color);
+    text-decoration: none;
+    
+}
+h3{
+    color: rgb(77, 76, 76);
+}
+
+
+
+body{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+header #aboveNavBar{
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    margin: 15px auto;
+}
+header #aboveNavBar #formInput{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 240px;
+    height: 55px;   
+    margin-left: 260px;
+}
+header #aboveNavBar #formInput #searchBar{
+    height: 25px;
+    width: 196px;       
+    padding: 0px 0px 2px 10px;
+    margin-right: 4px;
+}
+
+header #aboveNavBar #formInput #links{
+    cursor:pointer;
+    height: 22px;
+    width: 182px;
+    margin: 0px auto;
+    
+}
+
+header #aboveNavBar #formInput #searchBarWrapper{
+    display: flex;
+    flex-flow: row nowrap;  
+    height: 25px;
+    width: 238px;
+    margin-bottom: 10px;
+}
+
+header #aboveNavBar #formInnput #searchbarWrapper #searchButton{
+    width: 55px;
+    padding: 4px;
+    /* padding: 5px; */
+
+}
+   
+header #navBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 1100px;
+    margin: 5px auto 0px auto; 
+}
+header #navBar li{
+    list-style: none;
+}
+header #navBar li a{
+    text-decoration: none;
+    color:var(--defaultColor);
+    padding: 10px 15px;
+    background-color: rgb(228, 228, 228);
+    margin: 4px;
+    font-size: 14px;
+    border-start-start-radius: 6px;
+    border-start-end-radius:6px;
+}
+
+
+header #navBarDivider{
+    height: 30px;
+    background-color: var(--defaultColor); 
+    box-shadow: 0px 20px 60px -4px rgb(55, 165, 248);
+    margin-bottom: 6px;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main #sliderWrapper{
+    height: 500px;
+    width: 1100px;
+    padding-top: 30px;
+
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+main #sliderWrapper #sliderMainParent{
+    display: flex;
+    overflow: hidden;
+}
+
+main #sliderWrapper #slider{
+    position: relative;
+    top: 0%;
+    left: 3.9%;
+
+    height: 376px;
+    display: flex;
+    animation: slider 10s ease-in-out  infinite; 
+   
+    
+    margin: 0px auto;
+}
+
+main  #slider img{
+    margin: 10px 60px;
+}
+
+
+@keyframes slider {
+    0%{
+
+       transform: translate(0%, 0%);
+    }
+    28%{
+
+       transform: translate(0%, 0%);
+    }
+
+
+    33.3%{
+        transform: translate(-23.7%);
+    }
+    61.6%{
+        transform: translate(-23.7%);
+    }
+                
+
+
+    66.6%{
+        transform: translate(-47.3%);
+    }
+
+    94.9%{
+        transform: translate(-47.3%);
+    }
+
+    99.9%{
+        transform: translate(-70.9%);
+    }
+}  
+
+
+
+
+main #sliderWrapper #notificationBox{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+    margin-bottom: 25px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    background-color: rgb(242, 240, 240) ;
+    padding: 10px 10px 10px 10px;
+    width: 940px;
+}
+
+main #sliderWrapper #notificationBox a{
+    /* text-decoration: none; */
+    margin-left: 10px;
+    color:  #3f70a9;
+}
+
+main hr{
+    border: 1px solid rgb(231, 228, 228);
+    width: 1100px;
+}
+ main{
+    /* height: calc(100vh - 122px - 80px); */
+    display: flex;
+    flex-flow: column nowrap;
+    
+} 
+
+#mainCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 1200px;
+    height: 1200px;
+}
+
+
+#mainCont .flex-rows-containers{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#mainCont .flex-rows-containers .Cards{ 
+    height: 400px;
+    width: 338px;
+    /*border: 2px solid red;*/
+    margin: 20px;
+}
+
+#mainCont .flex-rows-containers #specialCard{
+    height: 30rem;
+}
+#mainCont .flex-rows-containers #specialCard::before{
+    
+    height: 34rem;
+    content: "HERE YOU CAN ADD INFORMATION ";
+    text-align: center;
+    background-color: rgb(205, 154, 0) ;
+    color: rgb(255, 255, 255);
+    display: block;
+    height: 30px;
+    font-size: 18px;
+}
+.InCard_ITEMSli a{
+    font-size: 19px;
+}
+
+#mainCont .flex-rows-containers .Cards::before{
+    text-align: center;
+    background-color: rgb(184, 34, 74);
+    height: 30px;
+    /* height: 20px; */
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    content: "NOTIFICATIONS YOU CAN ADD";
+    display: block;
+}
+
+#mainCont .flex-rows-containers .Cards{
+    display: flex;
+    /* margin: auto    ; */
+    flex-flow: column nowrap;
+}
+
+#mainCont .flex-rows-containers .Cards img{
+    height: 118px; /* Cards Image styling ... */
+}
+
+#mainCont .flex-rows-containers .Cards #contentHolder{
+    width: 305px;
+    display: flex;
+    flex-flow:  column nowrap;
+    margin: 12px auto;
+}
+
+#mainCont .flex-rows-containers .Cards #contentHolder .InCard_ITEMS{
+    margin: 5px 0px;
+}
+#mainCont .flex-rows-containers .Cards #contentHolder ul .InCard_ITEMSli{
+    margin: 12px 0px;
+}
+
+/* from here i'll start */
+
+#notificationBox a:hover ~ #notificationBox{
+    background-color: rgb(177, 177, 177);
+}
+hr{
+    border: 1px solid rgb(231, 228, 228);
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 122px;
+    font-size: 17px;
+    color: rgb(39, 39, 39);
+    background-color: rgb(255, 255, 255);
+}

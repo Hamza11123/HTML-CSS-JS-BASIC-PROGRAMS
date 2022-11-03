@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header #main_Logo_Container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 1446px;
+  margin: 0px auto;
+}
+header #navBar ul {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: #0967a9;
+  /* overflow: hidden; */
+}
+header #navBar ul li {
+  cursor: pointer;
+  overflow: hidden;
+  list-style-type: none;
+  padding: 1rem 1rem;
+  border: 0.5px solid white;
+  text-shadow: 1px 1px 0.6px black;
+}
+header #navBar ul li a {
+  padding: 1rem 1rem;
+  text-decoration: none;
+  color: white;
+}
+header #navBar ul li:hover a {
+  position: relative;
+  animation-name: H;
+  animation-timing-function: ease-out;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+header #navBar ul li:not(:hover) a {
+  position: relative;
+  animation-name: Hr;
+  animation-timing-function: ease-out;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+#main_Slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+#main_Slider img {
+  height: 500px;
+  width: 1100px;
+}
+
+#sect2{
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  align-items: flex-start;
+  height: 500px;
+  width: 1265px;
+  margin: 0 auto;
+}
+#sect2 #sect2Banner{
+  height: 100%;
+  width: 100%;
+}
+
+#sect2 #logo{
+  position: relative;
+  top: 0;
+  left: 266px;
+}
+
+
+@keyframes Hr {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 34px;
+  }
+  50.0001% {
+    top: -34px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes H {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -34px;
+  }
+  50.0001% {
+    top: 34px;
+  }
+  100% {
+    top: 0px;
+  }
+}
